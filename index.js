@@ -1,9 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const morgan = require('morgan');
 require('dotenv').config();
 
 const app = express();
 const port = 3000;
+
+// Use morgan to log requests
+app.use(morgan('combined'));
 
 const weatherApiKey = process.env.OPENWEATHER_API_KEY;
 const newsApiKey = process.env.NEWSAPI_API_KEY;
