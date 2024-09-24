@@ -1,10 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+require('dotenv').config();
+
 const app = express();
 const port = 3000;
 
-const weatherApiKey = "b89532a35177968074bf5a21ed9453ce";
-const newsApiKey = "f7dd13e6fa274c77b3d0b64ef2779e19";
+const weatherApiKey = process.env.OPENWEATHER_API_KEY;
+const newsApiKey = process.env.NEWSAPI_API_KEY;
+
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
