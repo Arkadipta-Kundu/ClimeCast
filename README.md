@@ -4,6 +4,7 @@
 
 **ClimeCast** is a web application built with Express.js that allows users to retrieve the current weather and recent news articles for a specified city. The app integrates the OpenWeather API and NewsAPI using Axios to fetch and display real-time data, providing an easy-to-use dashboard.
 
+![ClimeCast Dashboard](assets/dashboard.png)
 ## Features
 
 - Fetches real-time weather data using the OpenWeather API.
